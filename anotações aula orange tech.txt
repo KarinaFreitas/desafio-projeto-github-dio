@@ -1,0 +1,95 @@
+decomposição: segmentar em partes menores o problema para resolver o problema maior num todo.
+
+padrões: modelo base, estrutura invariante, repetição.
+
+abstração: isolar um objeto da realidade, é a generalização.
+
+algoritmos: sequencia de passos com objetivo defino, execução de tarfeas especificas e conjunto de operações que resultam em uma secessão finita de ações. Passo a passo.
+
+lógica: usada para traçar passos através do algoritmo para chegar à uma ação maior. Ou seja, é usado um passo a passo com pequenas ações para se chegar à uma ação final. Por exemplo: tomar café.
+
+técnicas de lógica de progração: 
+técnica linear - modelo tradicional, não tem vínculo, estrutra hierárquica, execução sequenciada, recursos limitados, única direção, também é muito usado em matemática.
+
+técnica estruturada - organização, disposição e ordem dos elementos essenciais que compõem um corpo (concreto ou abstrato). Por exemplo pode ser mais "explorada", tendo por exemplo uma outra linha para seguir. Exemplo: tomar café. Existe uma sequência de ações até de fato tomar o café, mas nessa técnica pode haver a possibilidade de fazer um suco ao invés do café.
+
+técnica modular - partes independentes controladas por um conjunto de regras. Simplificação, decompor o problemas, verificação por módulo. Ainda usando o exemplo do café, cada módulo terá suas ações separadas, mas que em conjunto levam a tomar café. O módulo de acordar, o de preparar a bebida e o de tomar café.
+
+variáveis: tipos numéros inteiros e reias, caracteres, string, booleana. Variável possui mutação, inconstante. Pode assumir qualquer tipo de valor e não tem certeza do valor que vai receber.
+
+constante: não é mutável, por exemplo, pi.
+
+estrtura condicional: simples, composta, estruturada.
+
+estrtura de repetição: laços, controle de fluxo, malhas de repetição, repetição, loop.
+
+vetor: tamanho pré fixado com valores que irá percorrer
+matriz: coleção de variáveis (vetores), índices.
+
+funções: são blocos de intruções que realizam tarefas específicas. Identificados por nome e parâmetros.
+
+código fonte: linguagem de programação, que pode ser traduzida ou interpretada. Isso vai depender do nível da linguagem... se é alto ou baixo nivel.
+
+características de progrma: legibilidade, redigibilidade, confiabilidade, custo, atualizações, uso de IA, disponibilidade de ferramentas etc.
+
+análise de código: 
+anaálise léxica - particionar, classificar, eliminar.
+análise sintática - forma que define a estrutra dentro daquela linguagem.
+análise semântica - é o estudo do significado, relacionado á lógica.
+
+paradigmas: forma de resolução de problemas com regras de cada paradigma. Classificação: orientação a objetos, procedural, funcional, estrturado, computação distribuida, lógico.
+
+objeto: é descrito por características específicas, comportamentos e estados. O que tenho? atributos. O que sou capaz de fazer? métodos. Como faço? estados.
+
+
+
+GIT / GITHUB
+Git
+Sistema de versionamento de código distribuído. Foi criado primeiramente para versionar o Linux.
+
+Comandos básicos no terminal:
+Listar diretórios da pasta atual - Windows: dir
+Listar diretórios da pasta atual - Linux: ls
+Navegar entre pastas: cd
+limpar o terminal - Wds: cls
+limpar o terminal - Lx: clear
+Auto completar : TAB
+Criar uma pasta: mkdir
+echo: mostra na tela
+del: deleta arquivos
+rmdir: deleta repositório
+rm -rf: deleta repositorio
+
+
+			GitHub
+
+
+Entendendo o funcionamento do GIT
+SHA1: algoritmo que vai encriptar com um conjunto de characteres identificador de 40 dígitos. Cada atualização do arquivo, o algoritmo gera um identificador. É uma forma segura e curta de representar um arquivo. Ex.: caso faça uma alteração no conteúdo e depois volte à alteração anterior, esse identificador será o mesmo de antes.
+
+Objetos fundamentais:
+BLOBS - os arquivos ficam guardados dentro desse objeto e ele contem metadados dentro dele. Vai ter o tipo, o tamanho, uma estruta (\0)
+
+TREES - armazenam os blobs e apontam para blobs (ou outras árvores) diferentes, e tambem guarda o nome do arquivo. Ela monta a estrutura de onde estão localizados os arquivos.
+
+COMMITS - é o que vai juntar tudo e dar sentido para a alteração. leva o nome do autor, data e hora de criação.
+
+Sistema distribuído
+por ter versões disponíveis em varios "mantenedores", outras pessoas, outros computadores que também têm o código daquele projeto.
+
+Segurança
+O GIT por ser encriptografado já o torna seguro. É praticamente impossível hackear o commit de alguém.
+
+
+Chave SSH: é uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas. Vai ter sempre uma chave pública e uma chave privada, e quando for para o GitHub o repositório já vai reconhecer a assinatura da máquina afim de autenticar. Agora é necessário realizar uma autenticação com o GitHub através de um token, ou seja, só usando o usuario e senha esta depreciado.
+
+Token: pode ser usado também para estabelecer conexão segura, mas esse tem uma expiração determinada. Etnão quando acaba o tempo de validade do Token é necessário criar outro.
+
+Markdown: uma forma de escrever um txt, só que de forma mais "humana". Como se fosse em HTML, mas sem a necessidade das tags. Todo arquivo Markdown tem extensão .md
+
+Ciclo de vida 
+Tracked: são os arquivos rastreados pleo Git e são subdivididos em três estados diferentes: Unmodified, Modified e Staged
+
+Untracked: são arquivos que o Git não tem ciencia da existencia deles.
+
+
